@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 try:
-    df = pd.read_csv(r"C:\Users\LOQ\Desktop\methodologyproject\clean_movies.csv")
+    df = pd.read_csv("clean_movies.csv")
 except FileNotFoundError:
     st.error("❌ ملف البيانات غير موجود! يرجى التأكد من المسار.")
     st.stop()
